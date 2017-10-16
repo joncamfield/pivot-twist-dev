@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cards Against Digital Security</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+<script type="text/javascript" src="dictionary.js"></script>
+<script language="JAVASCRIPT">
+
+function safeRand() {
+  Math.random();
+  return Math.random();
+}
+
+function getResult(redwhite)
+{
+	indexredcard = Math.floor(safeRand() * maxredcard);
+	indexwow = Math.floor(Math.random() * maxwow);
+	indexwhitecard = Math.floor(safeRand() * maxwhitecard);
+
+	redcard = arrayredcard[indexredcard];
+
+	redwhite = redcard.replace("__", "<u id=\"whitecard1\">" + arraywhitecard[indexwhitecard] + "</u>");
+
+		indexwhitecard2 = Math.round(Math.random() * maxwhitecard);
+		redwhite = redwhite.replace("__", "<u id=\"whitecard2\">" + arraywhitecard[indexwhitecard2] + "</u>");
+ // alert (indexredcard + ", " + indexwhitecard);
+//	document.getElementById("announce").innerHTML = arraywow[indexwow] + ":";
+	document.getElementById("innovation").innerHTML = redwhite;
+	document.getElementById("button").value = "Not dark enough?";
+	document.getElementById("buttonwhite").value = "Try another answer?";
+  document.getElementById("buttonwhite").style.visibility = "visible";
+}
+
+</script>
+
+<script language="JAVASCRIPT">
+function getnewwhite(newhite)
+{
+	indexwhitecard = Math.floor(Math.random() * maxwhitecard);
+	indexwhitecard2 = Math.floor(Math.random() * maxwhitecard);
+	indexwow = Math.floor(Math.random() * maxwow);
+  newwhite = arraywhitecard[indexwhitecard];
+	newwhite2 = arraywhitecard[indexwhitecard2];
+
+	document.getElementById("announce").innerHTML = arraywow[indexwow] + ":";
+	document.getElementById("whitecard1").innerHTML =  newwhite;
+	document.getElementById("whitecard2").innerHTML =  newwhite2;
+	document.getElementById("button").value = "Not dark enough?";
+	document.getElementById("buttonwhite").value = "Try another answer?";
+
+}
+
+</script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1 style="font-size: 2em;">"Cards Agains Digital Security" Card Combo Generator!</h1>
+				</header>
+				<div class="container">
+					<ul class="actions">
+						<li><a href="#one" class="button special scrolly">Get Started!</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h3  id="announce" > </h3>
+						</header>
+
+<h2 align="center" style="font-variant: small-caps; font-size: 1.5em !important; font-weight: bold;" id="innovation"></h2>
+
+
+<br>
+
+<div align="center"><form name="frmTest" onsubmit="return false">
+<input type="BUTTON" value="Let's Play!" id="button" onclick="getResult();" style="background-color: #C2113A; color: white !important; font-size: 16pt; font-weight: bold;"><br /> </br>
+<input type="BUTTON" value="" id="buttonwhite" onclick="getnewwhite();" style="visibility: hidden; font-size: 14pt; font-weight: bold;"><br />
+
+</form>
+</div>
+
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="image/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>Other Horrible Ideas</h2>
+						</header>
+						<p></p>
+						<ul class="icons-grid">
+							<li>
+								<span class="icon major fa-laptop"></span>
+								<h3><a href="http://cyber.pathbreaking.net/" target="_blank">The CyberIdeator</a></h3>
+							</li>
+							<li>
+								<span class="icon major fa-code"></span>
+								<h3><a href="http://itsthisforthat.com/" target="_blank">It's This for That</a></h3>
+							</li>
+							<li>
+								<span class="icon major fa-github-alt"></span>
+								<h3><a href="http://icanhazdigitalsecurity.tumblr.com/" target="_blank">I Can Haz Digital Security</a></h3>
+							</li>
+							<li>
+								<span class="icon major fa-check"></span>
+								<h3><a href="http://dack.com/web/bullshit.html" target=_blank">Web Economy Bullshit Generator</a></h3>
+							</li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+						</header>
+					<p>"It's like Cards against Humanity, for for infosec".</p>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<form enctype="text/plain"  action="MAILTO:someone@example.com" method="post">
+						<div class="row uniform">
+							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="12u$">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="special" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="icons">
+						<li><a href="http://twitter.com/pivottwistdev" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#footer" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Inspired by <a href="http://itsthisforthat.com/">ItsThisForThat</a>, hinted by <a href="http://wayan.com/">Wayan</a>, code modified from the CM Innovation Generator, which abuses the  <a href="http://dack.com/web/bullshit.html">Web Economy Bullshit Generator</a>, who used JavaScript provided by DHTML Diva Leslie Lee</em></p></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1316515-7', 'auto');
+  ga('send', 'pageview');
+-->
+
+</script>
+
+</html>
