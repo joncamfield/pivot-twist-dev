@@ -44,7 +44,7 @@ function makeMetaphor() {
 statement = "We're combining " + cards.arraytech[indextech] + " with " + cards.arraytech[indextech2] + " to " + cards.arrayfix[indexfix] + " " + cards.arraydev[indexdev] + ".";
 
 	console.time('timestamp');
-	console.log('There are ' + maxpivot + ' pivots, and ' + maxtwist + ' twists');
+//	console.log('There are ' + maxpivot + ' pivots, and ' + maxtwist + ' twists');
 	console.log('Just generated a great ' + statement.length  + ' character-long idea.: ' + statement );
 	return (statement);
 }
