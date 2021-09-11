@@ -14,7 +14,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
-<script type="text/javascript" src="cursed-dictionary.js"></script>
+<script type="text/javascript" src="dictionary.js"></script>
 <script language="JAVASCRIPT">
 
 
@@ -25,14 +25,11 @@ function safeRand() {
 
 function getResult(pivottwist)
 {
-        indexhipster = Math.round(safeRand() * maxhipster);
-        indextech = Math.round(safeRand() * maxtech);
-				indextech2 = Math.round(safeRand() * maxtech);
-				indexfix = Math.round(safeRand() * maxfix);
-				indexdev = Math.round(safeRand() * maxdev);
+        indexpivot = Math.round(safeRand() * maxpivot);
+        indextwist = Math.round(safeRand() * maxtwist);
         indexwow = Math.round(safeRand() * maxwow);
 
-	myInnovation = "We are combining " + arraytech[indextech] + " with " + arraytech[indextech2] + " to " + arrayfix[indexfix] + " " + arraydev[indexdev] + "</strong>.";
+	myInnovation = "It's like <strong>" + arraypivot[indexpivot] + "</strong>, but for <strong>" + arraytwist[indextwist] + "</strong>.";
 
 	document.getElementById("announce").innerHTML = arraywow[indexwow] + ":";
 	document.getElementById("innovation").innerHTML =  myInnovation;

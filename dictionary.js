@@ -1,105 +1,63 @@
-var arraypivot = new Array(
-"3D printing",
-"Agile",
+var arrayhipster = new Array(
 "AirBnB",
-"Amazon Marketplace",
 "Amazon Lockers",
-"Amazon Prime",
-"<span class=\"fa fa-cloud\"> </span>The Amazon Cloud",
-"app stores",
-"<span class=\"fa fa-apple\"> </span>the Apple Watch",
-"Ashleigh Madison",
-"Big Data",
-"<span class=\"fa fa-bitcoin\"> </span>Bitcoin",
-"the blockchain",
-"Candy Crush Saga",
-"Chromecast",
-"<span class=\"fa fa-cloud\"> </span>cloud hosting",
-"<span class=\"fa fa-cloud\"> </span>the cloud",
-"co-creation",
-"co-working spaces",
-"craigslist",
-"CRM",
-"crowdsourcing",
-"data visualization",
-"<span class=\"fa fa-delicious\"> </span>delicious",
-"design thinking",
+"the Apple Watch",
 "Disqus",
 "Dollar shave club",
 "Docker",
-"drone delivery",
-"drones",
-"<span class=\"fa fa-dropbox\"> </span>Dropbox",
 "emoji",
-"Eventbrite",
-"Evernote",
-"<span class=\"fa fa-facebook-official\"> </span>Facebook",
+"Facebook",
 "Facetime",
 "Fitbit",
 "Fitness trackers",
-"<span class=\"fa fa-flickr\"> </span>Flickr",
-"<span class=\"fa fa-foursquare\"> </span>Foursquare",
-"gamification",
-"<span class=\"fa fa-github\"> </span>github",
-"GoPro cameras",
-"<span class=\"fa fa-google\"> </span>Google apps and email",
-"<span class=\"fa fa-google\"> </span>Google docs",
-"<span class=\"fa fa-google\"> </span>Google Hangouts",
-"<span class=\"fa fa-google\"> </span>Google maps",
-"<span class=\"fa fa-google-plus-square\"> </span>Google+",
-"<span class=\"fa fa-google-wallet\"> </span>Google Wallet",
-"Groupon",
+"github",
+"A soon-to-be-discontinued Google product",
 "a hackathon",
 "human-centered design",
 "instagram filters",
 "the Internet of Things",
-"<span class=\"fa fa-linkedin-square\"> </span>LinkedIn",
+"LinkedIn",
 "Lyft",
 "Meetup",
-"mesh networking",
 "minecraft",
-"<span class=\"fa fa-mobile\"> </span>mobile apps",
-"MOOCs",
 "netflix",
-"Oculus Rift VR",
-"OKCupid",
-"open source",
-"Pandora",
-"PayPal",
-"<span class=\"fa fa-pinterest-square\"> </span>Pinterest pin-boards",
 "Podcasts",
-"<span class=\"fa fa-reddit\"> </span>reddit",
-"Scrums",
+"reddit",
 "Smart thermostats",
 "Snapchat",
 "Shazam",
 "Siri",
-"<span class=\"fa fa-skype\"> </span>Skype",
-"<span class=\"fa fa-mobile\"> </span>SMS",
 "smart grids",
 "Snapchat",
-"<span class=\"fa fa-spotify\"> </span>Spotify",
-"<span class=\"fa fa-steam-square\"> </span>Steam",
-"tablets",
-"<span class=\"fa fa-fire\"> </span>Tinder",
-"<span class=\"fa fa-trello\"> </span>Trello",
-"TripAdvisor",
-"<span class=\"fa fa-tumblr-square\"> </span>Tumblr",
-"<span class=\"fa fa-twitter-square\"> </span>Twitter",
-"<span class=\"fa fa-twitter-square\"> </span>Twitter bots",
+"Spotify",
+"TikTok",
+"Tinder",
+"Twitter",
 "Uber",
-"wearables",
-"<span class=\"fa fa-whatsapp\"> </span>WhatsApp",
-"WikiLeaks",
-"Wikipedia",
-"Wordclouds",
-"Viber",
-"<span class=\"fa fa-vine\"> </span>Vine",
-"<span class=\"fa fa-yelp\"> </span>Yelp",
-"<span class=\"fa fa-youtube\"> </span>Youtube"
+"WhatsApp",
+"Youtube"
 );
 
-var arraytwist = new Array(
+var arraytech = new Array(
+"3D printing",
+"Big Data",
+"Bitcoin",
+"the blockchain",
+"the cloud",
+"crowdsourcing",
+"data visualization",
+"design thinking",
+"cryptocurrency",
+"drone delivery",
+"drones",
+"gamification",
+"mesh networking",
+"NFTs",
+"wearables"
+);
+
+
+var arraydev = new Array(
 "advocacy",
 "agriculture",
 "agricultural development",
@@ -118,7 +76,6 @@ var arraytwist = new Array(
 "education",
 "election observation",
 "enviromental efforts",
-"fisheries",
 "freedom of expression",
 "fragile states",
 "eGov",
@@ -160,6 +117,13 @@ var arraytwist = new Array(
 "youth employment"
 );
 
+var arrayfix = new Array (
+"enable",
+"bring Western innovation to",
+"revolutionize",
+"transform"
+);
+
 var arraywow = new Array (
 "Awesome, so it's like",
 "Your Nobel Peace prize awaits with this idea",
@@ -171,10 +135,10 @@ var arraywow = new Array (
 "Pop some cheap champagne, because this is a winner"
 );
 
-var maxpivot = arraypivot.length - 1;
-var maxtwist = arraytwist.length - 1;
+var maxtech = arraytech.length - 1;
+var maxhipster = arrayhipster.length - 1;
+var maxfix = arrayfix.length - 1;
+var maxdev = arraydev.length - 1;
 var maxwow = arraywow.length - 1;
 
-
-
-module.exports = {arraypivot, arraytwist, arraywow};
+module.exports = {arraytech, arrayhipster, arrayfix, arraydev, arraywow};

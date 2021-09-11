@@ -22,10 +22,10 @@ app.get('/', function(req, res){
 app.listen(3000);
 
 var T = new Twit({
-  consumer_key:         'OQPcr1SvUrOGbR6E6sW6WA5oC',
-  consumer_secret:      'p6FOqV0KVW6TTUKgAHfCaJcKw4L0lSOWPGpKfecV11yWH2LrB7',
-  access_token:         '3306199859-fSdbe9Egu92Aca5DOfKIBIJ4m1Ex4dbVmo9wdtZ',
-  access_token_secret:  'Tnb3ZKeIkgTBeXXgKl8Be4r4qUQMzoovXjuWazzi6e0rB'
+  consumer_key:         '',
+  consumer_secret:      '',
+  access_token:         '',
+  access_token_secret:  ''
 });
 
 
@@ -53,7 +53,7 @@ function favRTs () {
     for(var i=0;i<r.length;i++) {
       T.post('favorites/create/'+r[i].id_str,{},function(){});
     }
-    console.log('harvested some RTs'); 
+    console.log('harvested some RTs');
   });
 }
 
@@ -110,7 +110,7 @@ arraypivot = new Array(
 "<span class=\"fa fa-dropbox\"></span> dropbox",
 "Evernote",
 "<span class=\"fa fa-facebook-official\"></span> Facebook",
-"Facetime",	
+"Facetime",
 "Fitbit",
 "Fitness trackers",
 "<span class=\"fa fa-flickr\"></span> Flickr",
