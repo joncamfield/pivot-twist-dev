@@ -17,11 +17,11 @@ function safeRand() {
 
 function makeMetaphor() {
 
-  var maxtech = arraytech.length - 1;
-  var maxhipster = arrayhipster.length - 1;
-  var maxfix = arrayfix.length - 1;
-  var maxdev = arraydev.length - 1;
-  var maxwow = arraywow.length - 1;
+  var maxtech = cards.arraytech.length - 1;
+  var maxhipster = cards.arrayhipster.length - 1;
+  var maxfix = cards.arrayfix.length - 1;
+  var maxdev = cards.arraydev.length - 1;
+  var maxwow = cards.arraywow.length - 1;
 
 
 //  	var maxpivot = cards.arraypivot.length - 1;
@@ -29,12 +29,12 @@ function makeMetaphor() {
 //   	var maxwow = cards.arraywow.length - 1;
 
 
-  indexhipster = Math.round(safeRand() * maxhipster);
-  indextech = Math.round(safeRand() * maxtech);
-  indextech2 = Math.round(safeRand() * maxtech);
-  indexfix = Math.round(safeRand() * maxfix);
-  indexdev = Math.round(safeRand() * maxdev);
-  indexwow = Math.round(safeRand() * maxwow);
+  var  indexhipster = Math.round(safeRand() * maxhipster);
+  var indextech = Math.round(safeRand() * maxtech);
+  var indextech2 = Math.round(safeRand() * maxtech);
+  var indexfix = Math.round(safeRand() * maxfix);
+  var indexdev = Math.round(safeRand() * maxdev);
+  var indexwow = Math.round(safeRand() * maxwow);
 
 //        var indexpivot = Math.round(safeRand() * maxpivot);
 //        var indextwist = Math.round(safeRand() * maxtwist);
