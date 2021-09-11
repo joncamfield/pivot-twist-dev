@@ -4,7 +4,7 @@ var striptags = require('striptags');
 require("console-stamp")(console, "HH:MM:ss.l");
 var tweet = "";
 var statement =   "";
-var config = require('./config.js');
+var config = require('../config.js');
 var cards = require('../dictionary.js');
 
 var T = new Twit(config);
@@ -17,14 +17,32 @@ function safeRand() {
 
 function makeMetaphor() {
 
-  	var maxpivot = cards.arraypivot.length - 1;
-  	var maxtwist = cards.arraytwist.length - 1;
-	var maxwow = cards.arraywow.length - 1;
+  var maxtech = arraytech.length - 1;
+  var maxhipster = arrayhipster.length - 1;
+  var maxfix = arrayfix.length - 1;
+  var maxdev = arraydev.length - 1;
+  var maxwow = arraywow.length - 1;
 
-        var indexpivot = Math.round(safeRand() * maxpivot);
-        var indextwist = Math.round(safeRand() * maxtwist);
 
-	statement = "It's " + cards.arraypivot[indexpivot] + ", but with Blockchain technology!";
+//  	var maxpivot = cards.arraypivot.length - 1;
+//  	var maxtwist = cards.arraytwist.length - 1;
+//   	var maxwow = cards.arraywow.length - 1;
+
+
+  indexhipster = Math.round(safeRand() * maxhipster);
+  indextech = Math.round(safeRand() * maxtech);
+  indextech2 = Math.round(safeRand() * maxtech);
+  indexfix = Math.round(safeRand() * maxfix);
+  indexdev = Math.round(safeRand() * maxdev);
+  indexwow = Math.round(safeRand() * maxwow);
+
+//        var indexpivot = Math.round(safeRand() * maxpivot);
+//        var indextwist = Math.round(safeRand() * maxtwist);
+
+
+//	statement = "It's " + cards.arraypivot[indexpivot] + ", but with Blockchain technology!";
+statement = "We're combining " + arraytech[indextech] + " with " + arraytech[indextech2] + " to " + arrayfix[indexfix] + " " + arraydev[indexdev] + ".";
+
 	console.time('timestamp');
 	console.log('There are ' + maxpivot + ' pivots, and ' + maxtwist + ' twists');
 	console.log('Just generated a great ' + statement.length  + ' character-long idea.: ' + statement );
@@ -46,7 +64,7 @@ function favRTs () {
     for(var i=0;i<r.length;i++) {
       T.post('favorites/create/'+r[i].id_str,{},function(){});
     }
-    console.log('harvested some RTs'); 
+    console.log('harvested some RTs');
   });
 }
 
