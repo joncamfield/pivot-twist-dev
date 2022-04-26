@@ -41,7 +41,7 @@ function makeMetaphor() {
 
 
 //	statement = "It's " + cards.arraypivot[indexpivot] + ", but with Blockchain technology!";
-statement = "We're combining " + cards.arraytech[indextech] + " with " + cards.arraytech[indextech2] + " to " + cards.arrayfix[indexfix] + " " + cards.arraydev[indexdev] + ".";
+statement = "Elon Musk is combining " + cards.arraytech[indextech] + " with " + cards.arraytech[indextech2] + " to " + cards.arrayfix[indexfix] + " " + cards.arraydev[indexdev] + ".";
 
 	console.time('timestamp');
 //	console.log('There are ' + maxpivot + ' pivots, and ' + maxtwist + ' twists');
